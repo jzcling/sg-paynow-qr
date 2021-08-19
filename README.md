@@ -2,6 +2,8 @@
 
 A PayNow QR Generator for Singapore.
 
+asImage flag does not work for now due to issues finding decent QRCode with logo generators for NodeJS. The QR string returned can be used as the content for QR Code generators on the browser.
+
 ## Installation
 
 ```
