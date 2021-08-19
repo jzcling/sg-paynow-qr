@@ -6,8 +6,6 @@
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "react-app/jest"
     ]
   },
   "browserslist": {
@@ -27,6 +25,7 @@
   "module": "dist/index.js",
   "babel": {
     "presets": [
+      ["minify", { "builtIns": false }],
       "env",
       "stage-2"
     ]

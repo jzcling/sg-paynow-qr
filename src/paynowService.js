@@ -32,8 +32,6 @@ export function generateQr(
   imageSize = 300,
   logo = null
 ) {
-  console.log(input);
-  console.log(new Date(input.expiry));
   try {
     const validatedInput = INPUT_SCHEMA.validateSync(input);
     if (validatedInput.uen) {
@@ -47,10 +45,8 @@ export function generateQr(
         "+65$1"
       );
     }
-    console.log(validatedInput);
 
     const payload = constructPayloadData(validatedInput);
-    console.log(payload);
     var qr = generateQrString(payload);
 
     // if (asImage) {
@@ -105,7 +101,6 @@ function generateQrString(data) {
  */
 function constructPayloadData(input) {
   const dynamic = !!input.amount;
-  console.log(input);
 
   const data = [
     { id: "00", value: "01" }, // ID 00: Payload Format Indicator (Fixed to '01')
