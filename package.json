@@ -1,0 +1,58 @@
+{
+  "name": "@jeremyling/sg-paynow-qr",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "NODE_ENV=production && rm -rf dist && mkdir dist && npx babel src --out-dir dist --copy-files --no-comments"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "description": "A PayNow QR Generator for Singapore",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "babel": {
+    "presets": [
+      "env",
+      "stage-2"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jzcling/sg-paynow-qr.git"
+  },
+  "keywords": [
+    "paynow",
+    "qr",
+    "singapore"
+  ],
+  "author": "Jeremy Ling",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jzcling/sg-paynow-qr/issues"
+  },
+  "homepage": "https://github.com/jzcling/sg-paynow-qr#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-minify": "^0.5.1",
+    "babel-preset-stage-2": "^6.24.1"
+  },
+  "dependencies": {
+    "yup": "^0.32.9"
+  }
+}
