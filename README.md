@@ -15,6 +15,8 @@ npm install --save @jeremyling/sg-paynow-qr
 ```js
 import * as pn from "@jeremyling/sg-paynow-qr";
 
+const date = new Date();
+
 const [qrString, error] = pn.generateQr({
   amount: 10.1, // Optional
   editable: 0, // 1 - Payment Amount is editable, 0 - Payment Amount not editable
