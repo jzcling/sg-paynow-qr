@@ -62,7 +62,7 @@ const config = [
       {
         file: `dist/${pkg.name}.min.js`,
         format: "umd",
-        name: "EnhancedTable",
+        name: "pn",
         exports: "named",
         sourcemap: true,
       },
