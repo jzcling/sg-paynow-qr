@@ -1,35 +1,12 @@
 {
   "name": "@jeremyling/sg-paynow-qr",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "scripts": {
-    "build": "NODE_ENV=production && rm -rf dist && mkdir dist && npx babel src --out-dir dist --copy-files --no-comments"
-  },
-  "eslintConfig": {
-    "extends": [
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "build": "NODE_ENV=production rollup -c"
   },
   "description": "A PayNow QR Generator for Singapore",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "babel": {
-    "presets": [
-      ["minify", { "builtIns": false }],
-      "env",
-      "stage-2"
-    ]
-  },
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jzcling/sg-paynow-qr.git"
@@ -46,12 +23,31 @@
   },
   "homepage": "https://github.com/jzcling/sg-paynow-qr#readme",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-minify": "^0.5.1",
-    "babel-preset-stage-2": "^6.24.1"
+    "@babel/cli": "^7.15.4",
+    "@babel/core": "^7.15.5",
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/plugin-proposal-decorators": "^7.15.4",
+    "@babel/plugin-proposal-export-namespace-from": "^7.14.5",
+    "@babel/plugin-proposal-function-sent": "^7.14.5",
+    "@babel/plugin-proposal-json-strings": "^7.14.5",
+    "@babel/plugin-proposal-numeric-separator": "^7.14.5",
+    "@babel/plugin-proposal-throw-expressions": "^7.14.5",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/plugin-syntax-import-meta": "^7.10.4",
+    "@babel/preset-env": "^7.15.4",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^20.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^13.0.4",
+    "babel-plugin-lodash": "^3.3.4",
+    "eslint": "^7.32.0",
+    "rollup-plugin-analyzer": "^4.0.0",
+    "rollup-plugin-auto-external": "^2.0.0",
+    "rollup-plugin-size-snapshot": "^0.12.0",
+    "rollup-plugin-terser": "^7.0.2"
   },
   "dependencies": {
     "yup": "^0.32.9"
-  }
+  },
+  "sideEffects": false
 }
