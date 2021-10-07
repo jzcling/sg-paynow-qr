@@ -1,6 +1,6 @@
 {
   "name": "@jeremyling/sg-paynow-qr",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "scripts": {
     "build": "NODE_ENV=production rollup -c"
   },
@@ -23,10 +23,10 @@
   },
   "homepage": "https://github.com/jzcling/sg-paynow-qr#readme",
   "devDependencies": {
-    "@babel/cli": "^7.15.4",
-    "@babel/core": "^7.15.5",
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.8",
     "@babel/plugin-proposal-class-properties": "^7.14.5",
-    "@babel/plugin-proposal-decorators": "^7.15.4",
+    "@babel/plugin-proposal-decorators": "^7.15.8",
     "@babel/plugin-proposal-export-namespace-from": "^7.14.5",
     "@babel/plugin-proposal-function-sent": "^7.14.5",
     "@babel/plugin-proposal-json-strings": "^7.14.5",
@@ -34,12 +34,12 @@
     "@babel/plugin-proposal-throw-expressions": "^7.14.5",
     "@babel/plugin-syntax-dynamic-import": "^7.8.3",
     "@babel/plugin-syntax-import-meta": "^7.10.4",
-    "@babel/plugin-transform-runtime": "^7.15.0",
-    "@babel/preset-env": "^7.15.4",
+    "@babel/plugin-transform-runtime": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
     "@rollup/plugin-babel": "^5.3.0",
-    "@rollup/plugin-commonjs": "^20.0.0",
+    "@rollup/plugin-commonjs": "^21.0.0",
     "@rollup/plugin-json": "^4.1.0",
-    "@rollup/plugin-node-resolve": "^13.0.4",
+    "@rollup/plugin-node-resolve": "^13.0.5",
     "babel-plugin-lodash": "^3.3.4",
     "eslint": "^7.32.0",
     "rollup-plugin-analyzer": "^4.0.0",
