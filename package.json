@@ -48,8 +48,8 @@
     "rollup-plugin-terser": "^7.0.2"
   },
   "dependencies": {
-    "@babel/runtime": "^7.15.4",
-    "yup": "^0.32.9"
+    "@babel/runtime": "^7.26.10",
+    "yup": "^1.0.0"
   },
   "sideEffects": false
 }
